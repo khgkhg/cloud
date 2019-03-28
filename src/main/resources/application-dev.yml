@@ -1,0 +1,15 @@
+#开发配置
+spring:
+  #profiles: dev
+  datasource:
+    #url: jdbc:oracle:thin:@192.192.185.15:1521:tifu     #?serverTimezone=UTC
+    #username: qygk
+    #password: qygk
+    #driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc:mysql://localhost:3306/test?serverTimezone=UTC
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    # 使用druid数据源
+    type: com.alibaba.druid.pool.DruidDataSource
+    

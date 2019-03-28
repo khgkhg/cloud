@@ -1,0 +1,29 @@
+#默认使用配置
+spring:
+  profiles:
+    active: dev
+  http:
+    encoding:
+      force: true
+      force-request: true
+      force-response: true
+      charset: utf-8
+      enabled: true
+
+#公共配置与profiles选择无关 mapperLocations指的路径是src/main/resources
+mybatis:
+  typeAliasesPackage: com.demo.entity
+  mapperLocations: classpath:mapper/*.xml
+
+#端口和上下文配置
+server:
+  port: 9000
+  servlet:
+    context-path: /cloud
+
+######### 分页插件 ##########
+pagehelper:
+    helper-dialect: mysql
+    params: count=countSql
+    reasonable: false
+    support-methods-arguments: true
