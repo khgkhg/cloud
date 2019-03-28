@@ -10,4 +10,13 @@ f.集成mybatis-generator插件代码自动生成
 g.集成pagehelper分页插件
 h.集成assembly自动化打包插件,分离配置文件，lib包依赖,jar文件和生成zip压缩文件
 
+项目demo包里有现成代码例子，跑起来需要mysql数据库支持
+1、数据库sid:test
+2、表usertemp
+CREATE TABLE `usertemp` (
+  `id` varchar(24) NOT NULL,
+  `username` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) 
+即可。
 刚接触springboot,接触不深，希望互相交流，相互学习
