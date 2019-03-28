@@ -18,5 +18,7 @@ CREATE TABLE `usertemp` (
   `username` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) 
-即可。
+自己随便插入几条数据
+即可.
+访问:http://localhost:9000/cloud/demo/getList
 刚接触springboot,接触不深，希望互相交流，相互学习
